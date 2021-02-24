@@ -1,11 +1,6 @@
-CC=g++
-CFLAGS= -c -Wall -Werror
-LDFLAGS=
-SOURCES=geometry.cpp
-OBJECTS=$(SOURCES:.cpp=.o)
-	EXECUTABLE=geometry
-all: $(SOURCES) $(EXECUTABLE)
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
-	
-.cpp.o:
-	$(CC) $(CFLSGS) $< -o $@
+ CC=g++
+ CFLANGS= -Werror -Wall
+ all:main
+ main: geometry.cpp
+	$(CC) $(CFLANGS) geometry.cpp
+
